@@ -14,7 +14,7 @@ public class UniStuttgartStudentPageTest {
     private WebDriver driver;
 
     @BeforeEach
-    void setup() {
+    void inicializaSelenium() {
         String BROWSER_TO_USE = "edge";
         String DRIVER_PATH = "src/driver/msedgedriver.exe";
         String BASE_URL = "https://www.student.uni-stuttgart.de/";
@@ -28,7 +28,7 @@ public class UniStuttgartStudentPageTest {
     }
 
     @AfterEach
-    void teardown() {
+    void finalizaSelenium() {
         if (driver != null) {
             System.out.println("Encerrando navegador.");
             driver.quit();
@@ -36,7 +36,7 @@ public class UniStuttgartStudentPageTest {
     }
 
     @Test
-    void testPageTitle() {
+    void tituloDePagina() {
         System.out.println("Verificando o título da página...");
         String expectedTitle = "Für Studierende | Universität Stuttgart";
         assertEquals(expectedTitle, driver.getTitle(), "O título da página está incorreto.");
