@@ -55,15 +55,15 @@ public class LucasTest {
     @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
     class LinksENavegacaoTests {
         @Test
-        @DisplayName("3. Verificar link 'Fakultäten und Institute' e seu atributo HREF (Componente 3)")
+        @DisplayName("3. Verificar link 'Alle Studiengänge' e seu atributo HREF (Componente 3)")
         @Order(1)
         void teste3_LinkAlleStudiengaenge() {
-            System.out.println("Verificando link 'Fakultäten und Institute'...");
-            WebElement link = driver.findElement(By.linkText("Fakultäten und Institute"));
-            assertNotNull(link, "Link 'Fakultäten und Institute' não encontrado.");
-            assertTrue(link.isDisplayed(), "Link 'Fakultäten und Institute' não está visível.");
-            assertEquals("https://www.uni-stuttgart.de/universitaet/fakultaeten-institute/", link.getAttribute("href"), "URL do link 'Fakultäten und Institute' está incorreta.");
-            System.out.println("Link 'Fakultäten und Institute' visivel: OK.");
+            System.out.println("Verificando link 'Alle Studiengänge'...");
+            WebElement link = driver.findElement(By.linkText("Alle Studiengänge"));
+            assertNotNull(link, "Link 'Alle Studiengänge' não encontrado.");
+            assertTrue(link.isDisplayed(), "Link 'Alle Studiengänge' não está visível.");
+            assertEquals("https://www.student.uni-stuttgart.de/studiengang/", link.getAttribute("href"), "URL do link 'Alle Studiengänge' está incorreta.");
+            System.out.println("Link 'Alle Studiengänge' visivel: OK.");
         }
 
         @Test
