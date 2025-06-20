@@ -25,6 +25,11 @@
             <version>5.13.1</version> <scope>test</scope>
         </dependency>
         <dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.4.0</version> <!-- versão recomendada -->
+		</dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.13.1</version> <scope>test</scope>
